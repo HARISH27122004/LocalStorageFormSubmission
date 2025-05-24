@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>STUDENT FORM</h1>
+    <table border="0" id="form-table">
+        <tr>
+            <td class="forLabel">
+                Name
+            </td>
+            <td>
+                <input type="text" id="tb1">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="forLabel">
+                Age
+            </td>
+            <td>
+                <input type="number" id="tb2">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="forLabel">
+                Gender
+            </td>
+            <td>
+                <input type="radio" name="gender" value="Male" class="rad">Male
+                <input type="radio" name="gender" value="Female" class="rad">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td class="forLabel">
+                Course
+            </td>
+            <td>
+                <select name="course" id="courses">
+                    <option value="">Select</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="React">React</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="forLabel">
+                E-mail
+            </td>
+            <td>
+                <input type="email" id="emailId">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2px" align="center">
+                <button type="button" id="btn1" onclick="save()">Save</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="table-wrapper">
+        <table border="1px" id="tbl2">
+            <thead>
+                <tr id="lastRow">
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>COURSE</th>
+                    <th>GENDER</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
